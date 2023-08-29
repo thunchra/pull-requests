@@ -1,0 +1,1 @@
+test pull after set rule to main branch
