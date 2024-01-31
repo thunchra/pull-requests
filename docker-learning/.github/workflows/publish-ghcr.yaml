@@ -9,5 +9,6 @@ jobs:
       - name: Build and push the image
         run:  |
           docker login --username thunchra --password ${{secrets.GH_PAT}} ghcr.io
+          docker ps -a
           docker build . --tag ghcr.io/thunchra/hello-world-ghcr:latest
           docker push ghcr.io/thunchra/hello-world-ghcr:latest
